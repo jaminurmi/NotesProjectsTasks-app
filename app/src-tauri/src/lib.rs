@@ -8,7 +8,7 @@ fn documents_data_file() -> Result<PathBuf, String> {
     Ok(docs
         .join("Projects & Notes")
         .join("data")
-        .join("muistio.json"))
+        .join("notes.json"))
 }
 
 fn atomic_write(path: &Path, contents: &str) -> Result<(), String> {
@@ -71,10 +71,10 @@ mod tests {
 
     #[test]
     fn atomic_write_creates_and_replaces_file() {
-        let dir = std::env::temp_dir().join(format!("muistio-test-{}", std::process::id()));
+        let dir = std::env::temp_dir().join(format!("npt-test-{}", std::process::id()));
         let _ = fs::remove_dir_all(&dir);
         fs::create_dir_all(&dir).unwrap();
-        let path = dir.join("muistio.json");
+        let path = dir.join("notes.json");
 
         atomic_write(&path, r#"{"notes":[]}"#).unwrap();
         atomic_write(&path, r#"{"notes":[{"id":"a"}]}"#).unwrap();

@@ -157,6 +157,13 @@ button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-
   text-transform: uppercase;
 }
 
+.brand-sub {
+  margin: 0.15rem 0 0;
+  color: var(--muted);
+  font-size: 0.75rem;
+  line-height: 1.3;
+}
+
 .sidebar nav {
   display: flex;
   flex-direction: column;

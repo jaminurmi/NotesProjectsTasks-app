@@ -1,7 +1,8 @@
 import type { Language, TaskStatus } from "./types";
 
 const en = {
-  appName: "Notes",
+  appName: "NPT",
+  tagline: "Notes Projects Tasks",
   local: "Local",
   notes: "Notes",
   projects: "Projects",
@@ -87,7 +88,7 @@ const en = {
   theme: "Theme",
   dark: "Dark",
   white: "White",
-  couldNotOpen: "Could not open Notes",
+  couldNotOpen: "Could not open NPT",
   loading: "Loading…",
   invalidData: "The save file is not valid.",
   loadFailed: "Could not load your notes.",
@@ -96,7 +97,8 @@ const en = {
 export type Messages = typeof en;
 
 const fi: Messages = {
-  appName: "Muistio",
+  appName: "NPT",
+  tagline: "Notes Projects Tasks",
   local: "Paikallinen",
   notes: "Muistiinpanot",
   projects: "Projektit",
@@ -182,10 +184,10 @@ const fi: Messages = {
   theme: "Teema",
   dark: "Tumma",
   white: "Valkoinen",
-  couldNotOpen: "Muistiota ei voitu avata",
-  loading: "Ladataan muistiota…",
+  couldNotOpen: "NPT:tä ei voitu avata",
+  loading: "Ladataan NPT:tä…",
   invalidData: "Tallennustiedosto ei ole kelvollinen.",
-  loadFailed: "Muistion lataus epäonnistui.",
+  loadFailed: "NPT:n lataus epäonnistui.",
 };
 
 export const messages: Record<Language, Messages> = { en, fi };

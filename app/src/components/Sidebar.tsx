@@ -43,10 +43,9 @@ export function Sidebar() {
   return (
     <aside className="sidebar">
       <div className="brand">
-        <span className="brand-mark" aria-hidden="true" />
         <div>
-          <p className="brand-kicker">{text.local}</p>
           <h1>{text.appName}</h1>
+          <p className="brand-sub">{text.tagline}</p>
         </div>
       </div>
       <nav aria-label={text.sections}>

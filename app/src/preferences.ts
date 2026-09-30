@@ -1,7 +1,7 @@
 import { defaultSettings, normalizeSettings } from "./storage";
 import type { Settings } from "./types";
 
-const STORAGE_KEY = "muistio-settings";
+const STORAGE_KEY = "npt-settings";
 
 export function readCachedSettings(): Settings {
   try {
@@ -20,5 +20,5 @@ export function cacheSettings(settings: Settings) {
 export function applySettings(settings: Settings) {
   document.documentElement.dataset.theme = settings.theme;
   document.documentElement.lang = settings.language;
-  document.title = settings.language === "fi" ? "Muistio" : "Notes";
+  document.title = "NPT";
 }
